@@ -4,8 +4,8 @@ import os
 import numpy as np
 
 # 1. Your Specific Windows Paths
-INPUT_FOLDER = "/Users/shub/rack/code-rack/playground/hollow/input"
-OUTPUT_FOLDER = "/Users/shub/rack/code-rack/playground/hollow/output"
+INPUT_FOLDER = r"C:\Users\Yashi\Downloads\hollow-world\input"
+OUTPUT_FOLDER = r"C:\Users\Yashi\Downloads\hollow-world\output"
 
 
 # 2. Diagnostic Check (To see why it might be skipping files)
