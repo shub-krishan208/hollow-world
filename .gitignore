@@ -12,3 +12,4 @@ input/*
 output/*
 .DS_Store
 *.pth
+*.pt
