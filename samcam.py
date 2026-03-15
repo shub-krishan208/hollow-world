@@ -5,7 +5,7 @@ import torch
 from segment_anything import sam_model_registry, SamPredictor
 
 # Changed default model_type to vit_h
-def isolate_center_objects(input_folder, output_folder, checkpoint_path, model_type="vit_h"):
+def isolate_center_objects(input_folder, output_folder, checkpoint_path, model_type="vit_b"):
     print("Loading SAM model...")
     #device = "cuda" if torch.cuda.is_available() else "cpu"
     # 4. Move model to GPU (NVIDIA CUDA) or use mps
@@ -89,7 +89,8 @@ if __name__ == "__main__":
     OUTPUT_DIR = "output"     
     
     # 1. Point to the massive 2.4GB weight file
-    CHECKPOINT = "sam_vit_h_4b8939.pth" 
+    #CHECKPOINT = "sam_vit_h_4b8939.pth" 
+    CHECKPOINT = "sam_vit_b_01ec64.pth"
     
     # 2. Tell the function to load the "Huge" architecture
     isolate_center_objects(INPUT_DIR, OUTPUT_DIR, CHECKPOINT, model_type="vit_h")
